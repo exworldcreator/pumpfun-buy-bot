@@ -18,7 +18,7 @@ This project is a Telegram bot integrated with the Solana blockchain to manage w
 
 ### Clone the repository:
 ```bash
-git clone https://github.com/yourusername/pumpfun-buy-bot.git
+git clone https://github.com/exworldcreator/pumpfun-buy-bot.git
 cd pumpfun-buy-bot
 ```
 
