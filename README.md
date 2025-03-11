@@ -58,7 +58,7 @@ npm start
 ### Example Commands:
 ```plaintext
 /wallets
-/buy 6zR3Q8e8xL8v8eP8v8eP8v8eP8v8eP8v8eP8v8eP8v8eP
+/buy 6zR3Q8e8xL8v8eP8v8eP8v8eP8v8eP8v8eP8v8eP8v8ePpump
 ```
 
 ## Project Structure
