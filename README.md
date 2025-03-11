@@ -46,7 +46,7 @@ npx tsc
 ## Usage
 Run the bot:
 ```bash
-node dist/bot.js
+npm start
 ```
 - The bot will start and log `Bot started...` in the console.
 
@@ -80,19 +80,26 @@ pumpfun-buy-bot/
 Install the following via `npm install`:
 ```json
 {
+  "name": "pumpfun-bot",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/main.js",
+    "build": "tsc",
+    "dev": "ts-node src/services/pumpfun/pumpfunBuy.ts"
+  },
   "dependencies": {
-    "@solana/web3.js": "^1.95.3",
     "@solana/spl-token": "^0.4.8",
-    "node-telegram-bot-api": "^0.66.0",
+    "@solana/web3.js": "^1.95.3",
     "axios": "^1.7.7",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.7",
+    "node-telegram-bot-api": "^0.66.0"
   },
   "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/node-telegram-bot-api": "^0.64.7",
+    "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
-  },
-  "scripts": {
-    "build": "tsc",
-    "start": "node dist/bot.js"
   }
 }
 ```
