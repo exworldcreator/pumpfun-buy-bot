@@ -35,7 +35,7 @@ cp .env.example .env
 Edit `.env` with your Telegram bot token:
 ```ini
 TELEGRAM_BOT_TOKEN=your_bot_token_here
-SOLANA_RPC_URL=https://mainnet.helius-rpc.com/?api-key=your_api_key
+SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
 ```
 
 ### Compile TypeScript:
@@ -66,13 +66,14 @@ node dist/bot.js
 pumpfun-buy-bot/
 │
 ├── src/
-│   ├── pumpfunBuy.ts    # Solana wallet management and token purchase logic
-│   └── bot.ts           # Telegram bot implementation
-├── dist/                # Compiled JavaScript files (after `npx tsc`)
-├── .env                 # Environment variables (ignored by Git)
-├── .gitignore           # Git ignore file
-├── package.json         # Node.js project configuration
-└── README.md            # This file
+│   ├── services/
+│   │   ├── pumpfunBuy.ts    # Solana wallet management and token purchase logic
+│   └── main.js              # Telegram bot implementation
+├── dist/                    # Compiled JavaScript files (after `npx tsc`)
+├── .env                     # Environment variables (ignored by Git)
+├── .gitignore               # Git ignore file
+├── package.json             # Node.js project configuration
+└── README.md                # This file
 ```
 
 ## Dependencies
